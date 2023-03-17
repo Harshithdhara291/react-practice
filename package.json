@@ -16,6 +16,7 @@
     "swiper": "^9.1.0",
     "typeface-raleway": "^1.1.13",
     "typeface-roboto": "^1.1.13",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
