@@ -16,3 +16,19 @@ export const PortfolioHead = styled.h1`
 export const TabsAndImagesCont = styled.div`
     background-color: #ebecf2;
 `
+
+export const TabsUnlist = styled.ul`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:90px 50px 50px 50px;
+`
+
+export const ImagesUnlist = styled.ul`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    flex-wrap:wrap;
+    flex-grow:0;
+    `

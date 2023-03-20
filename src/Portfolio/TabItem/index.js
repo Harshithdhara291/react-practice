@@ -1,23 +1,22 @@
+import { TabListItem,ButtonListItem } from "./TabItemStyledComponents"
+
 const TabItem = props => {
-    const {tabDetails, clickTabItem, isActive} = props
+    const {tabDetails, clickTabItem} = props
     const {tabId, displayText} = tabDetails
     console.log(props,tabDetails)
     const onClickTabItem = () => {
       clickTabItem(tabId)
     }
-  
-    const activeTabBtnClassName = isActive ? 'active-tab-btn' : ''
-  
+    
     return (
-      <li className="tab-item-container ">
-        <button
+      <TabListItem>
+        <ButtonListItem
           type="button"
-          className={`tab-btn ${activeTabBtnClassName}`}
           onClick={onClickTabItem}
         >
           {displayText}
-        </button>
-      </li>
+        </ButtonListItem>
+      </TabListItem>
     )
   }
   

@@ -3,7 +3,7 @@ import {v4 as uuidv4} from 'uuid'
 import EachImageItem from '../EachImageItem'
 import TabItem from '../TabItem'
 
-import {PortfolioSection,PortfolioHead,TabsAndImagesCont} from './PMSStyledComponents'
+import {PortfolioSection,PortfolioHead,TabsAndImagesCont,TabsUnlist,ImagesUnlist} from './PMSStyledComponents'
 
 const tabsList = [
   {tabId: 'LOGO', displayText: 'LOGO'},
@@ -102,7 +102,7 @@ const PortfolioMainSection = () =>{
     <PortfolioSection>
       <PortfolioHead>PORTFOLIO</PortfolioHead>
       <TabsAndImagesCont>
-      <ul>
+      <TabsUnlist>
           {tabsList.map(tabDetails => (
             <TabItem
               key={tabDetails.tabId}
@@ -110,15 +110,15 @@ const PortfolioMainSection = () =>{
               clickTabItem={clickTabItem}
             />
           ))}
-        </ul>
-        <ul>
+        </TabsUnlist>
+        <ImagesUnlist>
           {array.map(EachImage => (
             <EachImageItem
               key={EachImage.id}
               EachImage={EachImage}
             />
           ))}
-        </ul>
+        </ImagesUnlist>
       </TabsAndImagesCont>
     </PortfolioSection>
   )
