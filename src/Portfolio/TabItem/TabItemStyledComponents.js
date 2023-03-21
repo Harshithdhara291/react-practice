@@ -13,4 +13,11 @@ export const ButtonListItem = styled.button`
     color:#ffffff;
     cursor: pointer;
     font-weight:550;
+    &:hover{
+        color:#aeaeb5;
+    }
+    @media (max-width:768px){
+        width:300px;
+        margin:20px 0 20px 0;
+    }
 `

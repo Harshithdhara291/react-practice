@@ -9,9 +9,12 @@ export const ListItem = styled.li`
     cursor:pointer;
     width:16rem;
     margin:25px;
-    height:${props=>props.ht};
+    height:${props=>props.height};
     border:1px solid #b4b9fa;
     border-radius:5px;
+    @media (max-width:768px){
+        margin:10px;
+    }
 `
 
 export const Image = styled.img`

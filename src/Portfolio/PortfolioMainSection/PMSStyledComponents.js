@@ -22,6 +22,13 @@ export const TabsUnlist = styled.ul`
     justify-content:center;
     align-items:center;
     padding:90px 50px 50px 50px;
+    @media (max-width:768px){
+        padding:20px;
+        display:flex;
+        flex-direction:column;
+        justify-center:center;
+        align-items:center;
+    }
 `
 
 export const ImagesUnlist = styled.ul`
@@ -31,4 +38,5 @@ export const ImagesUnlist = styled.ul`
     padding:50px;
     flex-wrap:wrap;
     flex-grow:0;
+    
     `

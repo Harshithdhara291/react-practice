@@ -86,7 +86,6 @@ const socialMedia = [
 ]
 
 const allImages = [...businessCards,...flyers,...logos,...websites,...socialMedia]
-console.log(allImages)
 
 const PortfolioMainSection = () =>{
     const [array,setArray] = useState(allImages)
