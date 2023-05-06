@@ -1,10 +1,10 @@
+import Todo from "./TodoList/todos";
 import "./App.css";
-import PortfolioMainSection from './Portfolio/PortfolioMainSection'
+
+// crypto.randomUUID()
 
 const App = () => (
-  <>
-    <PortfolioMainSection />
-  </>
-);
+    <Todo/>
+  );
 
 export default App;
